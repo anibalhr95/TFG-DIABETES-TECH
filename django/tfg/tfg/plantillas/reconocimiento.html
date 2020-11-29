@@ -1,0 +1,105 @@
+{% load static  %}
+<!DOCTYPE html>
+<html>
+	<script> var timer = null;
+function auto_reload()
+{
+ top.location.href = 'http://127.0.0.1:8000/reconocimiento/';
+} </script>  <body onload="timer = setTimeout('auto_reload()',5000);">
+	<head><link rel="stylesheet" href="{% static 'styles.css' %}"></head>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type = "button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+
+					
+				
+				</button>
+				<a class="navbar-brand" href="http://127.0.0.1:8000/index/">DIABETES Tech</a>
+			</div>
+			<div class="collapse navbar-collapse" id="#topNavBar">
+				<ul class= "nav navbar-nav">
+					<li class="activate">
+						<a href="http://127.0.0.1:8000/reconocimiento/">
+							<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp;
+							Reconocimiento
+						</a>
+					</li>
+					</li>
+					<li class="activate">
+						<a href="http://127.0.0.1:8000/ipcamera/">
+							<span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>&nbsp;
+							IPCAM
+						</a>
+					</li>
+					<li class="activate">
+						<a href="http://127.0.0.1:8000/historial/">
+							<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp;
+							Historial de datos
+						</a>
+					</li>
+				</ul>
+				<ul class= "nav navbar-nav navbar-right">
+					<!--<li class="activate">
+						<a href="http://127.0.0.1:8000/contacto/">
+							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;
+							Contacto
+						</a>-->
+					</li>
+					<li class="activate">
+						<a href="http://127.0.0.1:8000/admin/">
+							<span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;
+							Usuario
+						</a>
+					</li>
+				</ul>
+			
+			</div>
+		
+		</div>
+	
+	
+	</nav>
+<body>
+	
+		<div  class="tituloReco">
+		<p><img src="{% static 'images/logo.png'%}" ALIGN="bottom"><FONT SIZE=15>     RECONOCIMIENTO</font></p></div>
+		
+		
+
+     
+	 
+        </body>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+
+		<div class ="marco1">
+		<img src="{% static 'images/alimento.jpg'%}"  width="500" height="400"></div>
+		<div class ="textNutrientes">
+		<fieldset> <legend><FONT SIZE=20><strong> Alimento Reconocido:</strong></font> </legend> 
+		
+		<p><FONT SIZE=10><strong>Alimento:</strong> {{nombre_alimento}}</font></p>
+        <p><FONT SIZE=10><strong>Peso:</strong> {{peso_alimento}} Kg</font></p>
+        <p><FONT SIZE=10><strong>IC(Indice Glucémico):</strong> {{indice_glucemico}}</font></p>
+        <p><FONT SIZE=10><strong>CG(Carga Glucémica):</strong> {{carga_glucemica}}</font></p>
+   </fieldset></div>
+
+
+
+
+<div class="wrapper">
+  
+</div>
+<footer class="footer">
+  <font color="white">TFG REALIZADO POR ANÍBAL HERRERA RODRÍGUEZ           </font><p align="right"><font color="white"> [DEPARTAMENTO LSI]</font> </p>
+  <div align="center"><img src="{% static 'images/logo.png'%}" width="150" height="60"</div>
+  
+</footer>
+	
+        </html>
