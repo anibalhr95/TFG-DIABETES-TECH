@@ -1,0 +1,96 @@
+
+body {
+  background-color: red;
+  background-image: url(background.png);
+}
+h1 {
+  color: blue;
+}
+p {
+  color: black;
+}
+.navbar{
+  border-radius: 0;
+
+}
+.navbar-brand{
+  font-family:'Satisfy', cursive;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: calc(100% - 4rem);
+}
+.footer{
+  height: 4rem;
+  background-color: black;
+  font-family:'Satisfy', cursive;
+
+}
+.tituloReco{
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  font-family:Comic sans;
+    font-size: 70px;
+  margin-right: 500px;
+
+
+
+}
+.marco1 {
+  position: relative; 
+width:560px;                     /* ancho de la foto */ 
+border:30px solid #000000;         /* ancho del borde - grosor - color */ 
+float:left;
+margin: 8px;
+margin-right: 50px;
+
+}
+.marco1 IMG{
+   border: 1px solid #000000;
+}
+.textNutrientes{
+margin:10px;
+padding: 80px;
+  font-family:Comic sans;
+  font-size: 40px;
+
+}
+
+.hero__text {
+  max-width: 680px;
+  text-align: center;
+  margin-left: 185px;
+}
+.hero__text h5 {
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+.hero__text h2 {
+  font-size: 48px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.hero__text p {
+  color: #000000;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+
+
